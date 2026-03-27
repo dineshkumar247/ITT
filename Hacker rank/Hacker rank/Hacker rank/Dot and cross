@@ -1,0 +1,15 @@
+import numpy
+
+n = int(input())
+A = []
+B = []
+
+for i in range(n):
+    A.append(list(map(int, input().split())))
+A = numpy.array(A)
+
+for j in range(n):
+    B.append([*map(int, input().split())])
+B = numpy.array(B)
+
+print(numpy.dot(A, B))
