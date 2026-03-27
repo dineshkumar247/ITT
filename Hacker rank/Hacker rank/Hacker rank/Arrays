@@ -1,0 +1,5 @@
+
+
+def arrays(arr):
+    reversed_array = arr[::-1]
+    return numpy.array(reversed_array, float)
