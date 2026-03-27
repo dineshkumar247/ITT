@@ -1,0 +1,10 @@
+import numpy as np
+
+n,m=(map(int, input().split()))
+l=[]
+for i in range(n):
+  (l.append(list(map(int, input().split()))))
+ar=np.array(l)
+s=np.sum(ar,axis=0)
+p=np.prod(s)
+print(p)
