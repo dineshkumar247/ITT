@@ -1,0 +1,7 @@
+from numpy import array, inner, outer
+
+A = array([*map(int, input().split())])
+B = array([*map(int, input().split())])
+
+print(inner(A, B))
+print(outer(A, B))
