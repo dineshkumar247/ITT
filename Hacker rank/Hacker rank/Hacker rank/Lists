@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    N,ls = int(input()) , list()
+    
+    for n in range(N):
+        command = list(input().split(" "))
+        if command[0] == "print":
+            print(ls)  
+        elif len(command) == 1:
+            eval(f"ls.{command[0]}()")
+        elif len(command) == 2:
+            eval(f"ls.{command[0]}({command[1]})")
+        elif len(command) == 3:
+            eval(f"ls.{command[0]}( {command[1]},{command[2]} )")
